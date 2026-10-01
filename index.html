@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f3ee" />
+    <meta
+      name="description"
+      content="LUME — studio masażu stworzone z myślą o odpoczynku, regeneracji i trosce o siebie. Wybierz masaż i zarezerwuj wizytę online."
+    />
+    <title>LUME — studio masażu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="LUME — strona główna"
+          ><span class="brand-mark" aria-hidden="true">L</span
+          ><span class="brand-name"
+            >LUME<span class="brand-dot">.</span
+            ><small>studio masażu</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Otwórz menu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Nawigacja główna">
+          <a href="#home">Główna</a><a href="#services">Masaże</a
+          ><a href="#prices">Cennik</a><a href="#about">O studiu</a
+          ><a href="#booking">Rezerwacja</a><a href="#contacts">Kontakt</a
+          ><a class="button button-small nav-book" href="#booking"
+            >Umów wizytę <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=2200&q=85"
+          alt="Kameralne studio masażu w ciepłym świetle, urządzone naturalnymi materiałami"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow light-eyebrow">
+            <span></span> Miejsce, w którym możesz odetchnąć
+          </p>
+          <h1>Odnajdź siebie<br /><em>dzięki dotykowi.</em></h1>
+          <p class="hero-copy">
+            Chwila wytchnienia w rytmie miasta. Masaż, który pomaga rozluźnić
+            ciało i pozwala myślom zwolnić.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#booking"
+              >Umów wizytę <span aria-hidden="true">↗</span></a
+            ><a class="text-link light-link" href="#services"
+              >Poznaj masaże <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span
+            ><span>Indywidualne podejście<br />w każdym ruchu</span>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#services" aria-label="Przewiń do masaży"
+          >↓</a
+        >
+      </section>
+      <section class="intro section-space" id="about">
+        <div class="container intro-grid">
+          <p class="eyebrow"><span></span> LUME — troska, którą poczujesz</p>
+          <div class="intro-text">
+            <h2>
+              To coś więcej niż masaż.<br /><em>Czas tylko dla Ciebie.</em>
+            </h2>
+            <p>
+              Stworzyliśmy kameralną przestrzeń, w której całą uwagę poświęcamy
+              Tobie. Dobierzemy technikę do Twojego samopoczucia i potrzeb, aby
+              po sesji poczuć lekkość i nową energię.
+            </p>
+            <a class="text-link" href="#booking"
+              >Poznaj nasze studio <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="intro-index">
+            <span>01</span><span class="index-rule"></span
+            ><span>Uważność na ciało</span>
+          </div>
+        </div>
+      </section>
+      <section class="services section-space" id="services">
+        <div class="container">
+          <div class="section-heading" id="prices">
+            <div>
+              <p class="eyebrow"><span></span> Znajdź swój sposób na relaks</p>
+              <h2>Masaże <em>i rytuały</em></h2>
+            </div>
+            <p class="heading-aside">
+              Każdą sesję zaczynamy od krótkiej rozmowy, aby dopasować masaż
+              właśnie do Ciebie.
+            </p>
+          </div>
+          <div class="service-grid" id="service-grid" aria-live="polite"></div>
+        </div>
+      </section>
+      <section class="quote-band" aria-label="Filozofia LUME">
+        <div class="container quote-inner">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>
+            Czasem najlepszy plan to<br /><em>nie mieć żadnego planu.</em>
+          </blockquote>
+          <span class="quote-caption">LUME / chwila dla siebie</span>
+        </div>
+      </section>
+      <section class="booking-section section-space" id="booking">
+        <div class="container booking-layout">
+          <div class="booking-intro">
+            <p class="eyebrow"><span></span> Chwila dla Ciebie</p>
+            <h2>Zarezerwuj<br /><em>czas dla siebie.</em></h2>
+            <p>
+              Wypełnij formularz. Twoja demonstracyjna rezerwacja zostanie
+              zapisana w tej przeglądarce.
+            </p>
+            <div class="hours-block">
+              <h3>Godziny otwarcia</h3>
+              <p><span>Pon. — pt.</span><span>10:00 — 20:00</span></p>
+              <p><span>Sobota</span><span>10:00 — 18:00</span></p>
+              <p><span>Niedziela</span><span>Nieczynne</span></p>
+            </div>
+          </div>
+          <form class="booking-form" id="booking-form">
+            <div class="form-heading">
+              <span>01 / Dane do rezerwacji</span
+              ><span class="required-note">* pola wymagane</span>
+            </div>
+            <div class="form-grid">
+              <label class="field"
+                ><span>Imię *</span
+                ><input
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Na przykład Anna"
+                  required
+              /></label>
+              <label class="field"
+                ><span>Telefon *</span
+                ><input
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="+48 000 000 000"
+                  required
+              /></label>
+              <label class="field"
+                ><span>E-mail *</span
+                ><input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="ty@example.com"
+                  required
+              /></label>
+              <label class="field"
+                ><span>Masaż *</span
+                ><select name="service" id="service-select" required>
+                  <option value="">Wybierz masaż</option>
+                </select></label
+              >
+              <label class="field"
+                ><span>Czas trwania *</span
+                ><select name="duration" id="duration-select" required disabled>
+                  <option value="">Najpierw wybierz masaż</option>
+                </select></label
+              >
+              <label class="field"
+                ><span>Data *</span
+                ><input name="date" id="booking-date" type="date" required
+              /></label>
+              <label class="field"
+                ><span>Godzina *</span
+                ><select name="time" id="time-select" required disabled>
+                  <option value="">Najpierw wybierz datę</option>
+                </select></label
+              >
+              <label class="field field-wide"
+                ><span>Uwagi</span
+                ><textarea
+                  name="comment"
+                  rows="3"
+                  placeholder="Twoje preferencje lub ważne informacje"
+                ></textarea>
+              </label>
+            </div>
+            <div class="form-bottom">
+              <p class="form-total" id="form-total">
+                Cena pojawi się po wybraniu masażu
+              </p>
+              <button class="button" type="submit">
+                Potwierdź rezerwację <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <label class="privacy-consent">
+              <input name="privacy-consent" type="checkbox" required />
+              <span
+                >Wyrażam zgodę na przekazanie danych kontaktowych przez
+                FormSubmit w celu wysłania rezerwacji do studia.</span
+              >
+            </label>
+            <p
+              class="form-feedback"
+              id="form-feedback"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+      <section class="my-bookings section-space" id="my-bookings">
+        <div class="container">
+          <div class="section-heading bookings-heading">
+            <div>
+              <p class="eyebrow"><span></span> Zapisane w tej przeglądarce</p>
+              <h2>Moje <em>rezerwacje</em></h2>
+            </div>
+            <span class="booking-count" id="booking-count">0 rezerwacji</span>
+          </div>
+          <div class="booking-list" id="booking-list" aria-live="polite"></div>
+        </div>
+      </section>
+      <section class="contact-section" id="contacts">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow light-eyebrow"><span></span> Jesteśmy blisko</p>
+            <h2>Do zobaczenia<br /><em>wkrótce.</em></h2>
+          </div>
+          <div class="contact-details">
+            <a href="tel:606569831"
+              ><span>Telefon</span
+              ><strong id="contact-phone">606 569 831</strong></a
+            ><a href="mailto:ilonadavydova43@gmail.com"
+              ><span>E-mail</span
+              ><strong id="contact-email">ilonadavydova43@gmail.com</strong></a
+            >
+            <div class="contact-actions">
+              <a class="button button-light" href="tel:606569831"
+                >Zadzwoń <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link light-link"
+                href="mailto:ilonadavydova43@gmail.com"
+                >Napisz do nas <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="#home">LUME<span>.</span></a>
+        <p>Miejsce, w którym odzyskasz spokój.</p>
+        <a href="#home">Na górę ↑</a
+        ><small>© <span id="current-year"></span> LUME studio masażu</small>
+      </div>
+    </footer>
+  </body>
+</html>
